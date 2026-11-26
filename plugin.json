@@ -1,7 +1,7 @@
 {
   "id": "ardoise.docker",
   "name": { "en": "Docker", "fr": "Docker" },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "api": 1,
   "description": {
     "en": "Containers, images, volumes, networks, registries and Compose: shells, logs, files of containers and volumes, cleanup, ▶ and completion in Dockerfiles",
