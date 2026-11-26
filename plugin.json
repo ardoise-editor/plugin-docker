@@ -1,0 +1,29 @@
+{
+  "id": "ardoise.docker",
+  "name": { "en": "Docker", "fr": "Docker" },
+  "version": "1.0.0",
+  "api": 1,
+  "description": {
+    "en": "Containers, images, volumes, networks, registries and Compose: shells, logs, files of containers and volumes, cleanup, ▶ and completion in Dockerfiles",
+    "fr": "Conteneurs, images, volumes, réseaux, registres et Compose : shells, logs, fichiers des conteneurs et volumes, nettoyage, ▶ et complétion dans les Dockerfile"
+  },
+  "author": "Ardoise Editor",
+  "repository": "ardoise-editor/plugin-docker",
+  "license": "MIT",
+  "command": ["bin/docker-plugin"],
+  "events": ["active_file", "file_saved"],
+  "contributes": {
+    "commands": [
+      { "id": "docker.show", "title": { "en": "Docker: Show", "fr": "Docker : afficher" } },
+      { "id": "docker.console", "title": { "en": "Docker: Console", "fr": "Docker : console" } },
+      { "id": "docker.run", "title": { "en": "Docker: New Container…", "fr": "Docker : nouveau conteneur…" } },
+      { "id": "docker.pull", "title": { "en": "Docker: Pull an Image…", "fr": "Docker : télécharger une image…" } },
+      { "id": "docker.cleanup", "title": { "en": "Docker: Clean Up…", "fr": "Docker : nettoyer…" } },
+      { "id": "docker.file", "title": { "en": "Docker: Run This File…", "fr": "Docker : lancer ce fichier…" } }
+    ],
+    "panels": [
+      { "id": "docker", "title": { "en": "Docker", "fr": "Docker" }, "icon": "\uf308" },
+      { "id": "console", "title": { "en": "Docker Console", "fr": "Console Docker" }, "icon": "\uf489", "location": "bottom" }
+    ]
+  }
+}
